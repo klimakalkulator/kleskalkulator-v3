@@ -273,14 +273,14 @@
                 </div>
 
                 <button class="add-btn" onclick="addToCart()">
-                    Legg til i handlekurv
+                    Legg til
                 </button>
 
                 <div class="shopping-cart">
-                    <h3 style="margin-bottom: 15px; color: #2c3e50;">Handlekurv</h3>
+                    <h3 style="margin-bottom: 15px; color: #2c3e50;">Mine klær</h3>
                     <div id="cartItems">
                         <div class="empty-cart">
-                            Handlekurven er tom. Legg til klær for å starte!
+                            Listen er tom. Legg til klær for å starte!
                         </div>
                     </div>
                     
@@ -362,7 +362,7 @@
             const calculateBtn = document.getElementById('calculateBtn');
 
             if (cart.length === 0) {
-                cartContainer.innerHTML = '<div class="empty-cart">Handlekurven er tom. Legg til klær for å starte!</div>';
+                cartContainer.innerHTML = '<div class="empty-cart">Listen er tom. Legg til klær for å starte!</div>';
                 calculateBtn.disabled = true;
             } else {
                 cartContainer.innerHTML = cart.map(item => `
